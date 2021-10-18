@@ -40,7 +40,7 @@
 
 ---
 
-## Graph :heavy_check_mark: on :date: 10/17/2021, review 10/25
+## Graph - :heavy_check_mark: on :date: 10/17/2021, review 10/25
 
 - [x] [Clone Graph](https://leetcode.com/problems/clone-graph/)
 - [x] [Course Schedule](https://leetcode.com/problems/course-schedule/)
