@@ -15,11 +15,11 @@ class Solution:
             else:
                 if len(second_word) < len(first_word):
                     return ""
-        seen = {}
+        seen = set()
         alien_chars = []
         def dfs_visit(node):
             if node in seen: # we've entered a cycle
-                return seen[node]
+                return
             seen[node] = False
             for child in adj_list[node]:
                 result = dfs_visit(child)
