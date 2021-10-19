@@ -2,9 +2,18 @@
 ## Array
 
 - [x] [Two Sum](https://leetcode.com/problems/two-sum/)
+  - **Optimal O(n)**: `check whether complement (target - nums[i]) exists in a hashtable. if it does, return i and the complement key`
 - [x] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+  - **O(n)**: `keep track of max profit and min cost, max starts as inf, for each price our profit is the current price
+  minus the min cost, check max_profit = max(profit, max_profit). min_cost = min(prices[i], min_cost)`
 - [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
-- [ ] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+  - **Cheese Way**: `create set from nums, return whether the set is different from how many nodes were given.`
+  - **O(n)**: `use a hash table, if num is in hashtable, return False. otherwise true`
+- [x] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+  - **Naive (O(n^2)):** `Brute force from any given n by traversing left and right for each element.`
+  - **O(n):** ` Build two arrays for all products up to i from left and all products up to i from right. At each element
+    i, we know all the product [i-1...0] and all the products [i + 1...len(A)], so replace index with a 
+    multiplication of these two elements.`
 - [ ] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 - [ ] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
 - [ ] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
@@ -118,8 +127,8 @@
 
 ## Heap
 
-- [X] [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
-- [ ] [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
+- [x] [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
+- [x] [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
 - [ ] [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)
 
 ## Important Link:

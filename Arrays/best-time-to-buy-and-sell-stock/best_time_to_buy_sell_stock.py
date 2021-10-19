@@ -2,11 +2,8 @@ def max_profit(prices: list[int]) -> int:
     max_profit, min_cost = 0, float('inf')
     for i in range(len(prices)):
         profit = prices[i] - min_cost
-        if profit > max_profit:
-            max_profit = profit
-        if prices[i] < min_cost:
-            min_cost = prices[i]
-
+        max_profit = max(max_profit, profit)
+        min_cost = min(prices[i], min_cost)
     return max_profit
 
 
