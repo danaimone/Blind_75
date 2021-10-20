@@ -78,7 +78,9 @@
   - **O(n):** `current pointer to head, previous pointer is nil. while current not none, the next node becomes previous,
     the previous pointer becomes the current node, and current node becomes the next node (requires temp pointer from current.next at top)
     prev would point to the head of this list`
-- [ ] [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)
+- [x] [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)
+  - **O(n):** `we can think of a fast and slow pointer approach where if there's a cycle, the fast pointer has to catch up to slow eventually. just keep moving them
+          forward while slow != fast. if we ever hit a None with fast, there couldn't have been a cycle since there isn't anywhere to loop.`
 - [x] [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 - [x] [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
   - **O(n):** `put all the linked lists in a heap and pop the min off while you still have nodes. we can track both the value
