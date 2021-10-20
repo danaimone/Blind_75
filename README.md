@@ -80,7 +80,11 @@
     prev would point to the head of this list`
 - [ ] [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)
 - [x] [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
-- [ ] [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
+- [x] [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
+  - **O(n):** `put all the linked lists in a heap and pop the min off while you still have nodes. we can track both the value
+  and the index of the node so we can maintain stability. keep popping and creating a new node, setting up the next pointers
+    correctly. we can use that index that we tracked to update the original list so we can keep iterating through. if
+    we successfully get another node, we can push that to our heap.`
 - [ ] [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 - [ ] [Reorder List](https://leetcode.com/problems/reorder-list/)
 
