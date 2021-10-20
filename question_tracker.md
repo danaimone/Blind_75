@@ -74,7 +74,10 @@
 
 ## Linked List
 
-- [ ] [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)
+- [x] [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)
+  - **O(n):** `current pointer to head, previous pointer is nil. while current not none, the next node becomes previous,
+    the previous pointer becomes the current node, and current node becomes the next node (requires temp pointer from current.next at top)
+    prev would point to the head of this list`
 - [ ] [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)
 - [x] [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 - [ ] [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
