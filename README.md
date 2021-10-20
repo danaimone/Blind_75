@@ -88,7 +88,9 @@
 
 ## Matrix
 
-- [ ] [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
+- [x] [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
+  - **O(n):** `to do this in place, we can use two sets to check whether a zero was set for row or col. can alternatively
+               set first element of row and first element of column as flags, and check if they are set. `
 - [ ] [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
 - [ ] [Rotate Image](https://leetcode.com/problems/rotate-image/)
 - [ ] [Word Search](https://leetcode.com/problems/word-search/)
