@@ -87,7 +87,9 @@
   and the index of the node so we can maintain stability. keep popping and creating a new node, setting up the next pointers
     correctly. we can use that index that we tracked to update the original list so we can keep iterating through. if
     we successfully get another node, we can push that to our heap.`
-- [ ] [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+- [x] [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+  - **O(n):** `we can send a fast pointer to go n times using the relation size of list - n + 1 as the actual index. We can send a fast pointer to the end of the index and 
+    increment our slow pointer until it points to the element before n. we can do this by setting fast to our next pointer while now incrementing our slow pointer, and setting our slow's next to be its slow.next.next. Could potentially want to free the Nth node for memory purposes`
 - [ ] [Reorder List](https://leetcode.com/problems/reorder-list/)
 
 ---
